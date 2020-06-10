@@ -1,0 +1,97 @@
+@import url('hhttps://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  width: 24%;
+  margin: 4rem auto 2.3rem auto;
+}
+
+.navitem{
+  padding: 1rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.aboutpica{
+  width: 53%;
+  margin: 4rem auto 2.3rem auto;
+}
+
+.abouttext{
+  width: 45%;
+  font-weight: 100;
+  letter-spacing: .08rem;
+}
+.form{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form>label{
+  padding: 2rem 0;
+}
+
+.abutton{
+  color: red;
+}
+
+.normalFooter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.portfolioGrid{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.portfolioGridPics{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolioGrid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.portfolioGrid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+
+.portfolioItem{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.input{
+  border-width: 0 0 .05rem 0;
+  border-color: #1DE9B6;
+  text-align: center;
+  resize: none;
+  outline: none;
+}
