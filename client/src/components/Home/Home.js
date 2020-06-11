@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import styles from '../../styles/pageheader.module.css';
 import pica from '../../assets/overtone.jpg';
-import { MDBView, MDBMask } from "mdbreact";
 
 
 const Home = () => {
