@@ -6,11 +6,14 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { Ripple } from 'react-preloaders';
 
+
 ReactDOM.render(
+
   <BrowserRouter>
     <App />
     <Ripple />
   </BrowserRouter>,
+
   document.getElementById("root")
 );
 

@@ -6,7 +6,7 @@ class PortfolioStore {
   constructor(rootStore) {
     this.rootStore = rootStore;
     this.projecten = [];
-    this.authorsService = new RestService("drinks");
+    this.authorsService = new RestService("projecten");
   }
 
   loadAllItems = async () => {

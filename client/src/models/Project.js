@@ -30,9 +30,10 @@ class Project {
   //   }
   // }
 
-  updateFromJson = ({ name, text }) => {
+  updateFromJson = ({ name, text, image }) => {
     this.name = name;
     this.text = text;
+    this.image = image;
   };
 
   get asJson() {

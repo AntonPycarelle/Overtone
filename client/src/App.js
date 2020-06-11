@@ -9,12 +9,13 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import styles from './styles/pageheader.module.css';
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <div className="App">
         <PageHeader />
         <Switch>

@@ -4,14 +4,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+
+.app{
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 58%, rgba(254,254,254,1) 100%);
+}
+
 .logo {
   width: 24%;
   margin: 4rem auto 2.3rem auto;
 }
 
 .navitem{
-  padding: 1rem;
+  margin: 1rem;
   letter-spacing: .2rem;
+  font-size: .8rem;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -45,13 +51,44 @@
 }
 
 .normalFooter {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #f4f4f4;
-  text-align: center;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  padding: 2rem 0 1rem 0;
+
+}
+/* strong{
+
+} */
+
+.normalFooterul{
+  display: flex;
+  justify-content: center;
+}
+
+.abouttext{
+  width: 60%;
+  margin: 1rem auto 3rem auto;
+  letter-spacing: .1rem;
+  font-size: .9rem;
+  line-height: 1.6rem;
+}
+
+.normalFooterItem{
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.normalFooterItemtext {
+  color: gray;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: .05rem;
+  font-size: .8rem;
+}
+
+.footerlogo{
+  width: 10rem;
+  padding-left: 2.5rem;
 }
 
 .portfolioGrid{
@@ -61,8 +98,8 @@
   grid-auto-rows: 1fr;
   grid-gap: 1rem;
   width: 80%;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto 5rem auto;
+  /* margin-top: 3rem; */
 }
 
 .portfolioGridPics{
@@ -102,6 +139,7 @@
 .input:focus{
   transition: all .3s;
   border-color: #1DE9B6;
+  border-width: 0 0 .3rem 0;
 
 }
 

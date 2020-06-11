@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import styles from '../../styles/pageheader.module.css';
 import pica from '../../assets/overtone.jpg';
-
+import ReactWOW from 'react-wow'
 
 const Home = () => {
   const { portfolioStore } = useStore();
@@ -14,15 +14,18 @@ const Home = () => {
     <section >
       <ul className={styles.portfolioGrid}>
         {portfolioStore.projecten.map(project => (
-          <Link to={ROUTES.projectDetail.to + project.id}>
+          console.log(project),
+          < Link to={ROUTES.projectDetail.to + project.id} >
             <li className={styles.portfolioItem} key={project.id}>
               {/* <Link to={ROUTES.projectDetail.to + project.id}>{project.name}</Link> */}
-              <img src={pica} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
+              <img src={project.image} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
             </li>
+
+
           </Link>
         ))}
       </ul>
-    </section>
+    </section >
   ));
 };
 
