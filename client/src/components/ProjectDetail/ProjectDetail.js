@@ -41,7 +41,8 @@ const ProjectDetail = () => {
 
     return (
       <article>
-        {book.image}
+        <img src={book.image} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
+
       </article>
     );
   });
