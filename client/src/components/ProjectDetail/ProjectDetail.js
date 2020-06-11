@@ -41,7 +41,7 @@ const ProjectDetail = () => {
 
     return (
       <article>
-        {book.text}
+        {book.image}
       </article>
     );
   });
