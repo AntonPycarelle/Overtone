@@ -5,7 +5,7 @@ import { useObserver } from "mobx-react-lite";
 import { ROUTES } from "../../consts";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import styles from '../../styles/pageheader.module.css';
+import styles from './projectdetail.module.css';
 
 
 // import style from "../../style/pageheader.module.css";
@@ -49,7 +49,7 @@ const ProjectDetail = () => {
         <h2 className={styles.title}>{project.name}</h2>
 
         <div className={styles.wrappercarousel}>
-          <Carousel stopOnHover swipeable infiniteLoop useKeyboardArrows showArrows={false} className={styles.carousel}>
+          <Carousel showStatus dynamicHeight stopOnHover swipeable infiniteLoop useKeyboardArrows showArrows={false} className={styles.carousel}>
             {project.images.map(image => (
               <div>
                 <img src={image} alt={project.id} className={styles.objectFit} />
@@ -57,7 +57,8 @@ const ProjectDetail = () => {
             ))}
           </Carousel>
         </div>
-        <p>{project.text}</p>
+        <h4 className={styles.detailtitle} >Over dit project</h4>
+        <p className={styles.detailtext}>{project.text}</p>
       </main >
     );
   });

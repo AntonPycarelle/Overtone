@@ -1,7 +1,7 @@
 @import url('hhttps://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap');
 
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -67,29 +67,22 @@
   padding: 0;
   margin: 3rem 0 -.05rem 0;
   font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .2rem;
 }
 
 .title{
   padding: 0;
   margin: 0;
   font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+
 }
 
-.objectFit{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.carousel{
-  width: 45%;
-  margin: auto;
-  padding: 2rem 0;
-}
 
-/* strong{
 
-} */
 
 .normalFooterul{
   display: flex;
@@ -123,40 +116,12 @@
   /* padding-left: 2.5rem; */
 }
 
-.portfolioGrid{
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  grid-auto-rows: 1fr;
-  grid-gap: 1rem;
-  width: 80%;
-  margin: 3rem auto 5rem auto;
-}
-
-.portfolioGridPics{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolioGrid::before {
-  content: '';
-  width: 0;
-  padding-bottom: 100%;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-.portfolioGrid > *:first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
 
 
-.portfolioItem{
-  width: 100%;
-  height: 100%;
-}
+
+
+
+
 
 .input{
   border-width: 0 0 .08rem 0;
@@ -190,4 +155,13 @@
   align-self: center;
   outline: none;
 
+}
+
+@media only screen and (max-width: 600px) {
+  .normalFooter {
+    background-color: red;
+    text-transform: uppercase;
+    padding: 2rem 0 1rem 0;
+  
+  }  
 }

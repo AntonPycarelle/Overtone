@@ -10,13 +10,27 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import styles from './styles/pageheader.module.css';
-
+import GoogleFontLoader from 'react-google-font-loader';
 
 
 function App() {
+
+
   return (
     <div className={styles.app}>
       <div className="App">
+        <GoogleFontLoader
+          fonts={[
+            {
+              font: 'Roboto',
+              weights: [400, '400i'],
+            },
+            {
+              font: 'Roboto Mono',
+              weights: [400, 700],
+            },
+          ]}
+        />
         <PageHeader />
         <Switch>
           <Route path={ROUTES.addAuthor}>

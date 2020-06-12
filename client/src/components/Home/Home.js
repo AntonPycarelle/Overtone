@@ -3,7 +3,7 @@ import { useStore } from "../../hooks";
 import { ROUTES } from "../../consts";
 import { Link } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
-import styles from '../../styles/pageheader.module.css';
+import styles from './home.module.css';
 import pica from '../../assets/overtone.jpg';
 import ReactWOW from 'react-wow'
 
@@ -17,8 +17,12 @@ const Home = () => {
           console.log(project),
           < Link to={ROUTES.projectDetail.to + project.id} >
             <li className={styles.portfolioItem} key={project.id}>
-              {/* <Link to={ROUTES.projectDetail.to + project.id}>{project.name}</Link> */}
+              <div className={styles.overlay}>
+                <p className={styles.hoveritem} >{project.name}</p>
+              </div>
+
               <img src={project.images[0]} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
+
             </li>
 
 
