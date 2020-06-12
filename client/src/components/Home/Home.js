@@ -4,8 +4,8 @@ import { ROUTES } from "../../consts";
 import { Link } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import styles from './home.module.css';
-import pica from '../../assets/overtone.jpg';
-import ReactWOW from 'react-wow'
+import LazyLoad from 'react-lazyload';
+
 
 const Home = () => {
   const { portfolioStore } = useStore();
@@ -15,18 +15,20 @@ const Home = () => {
       <ul className={styles.portfolioGrid}>
         {portfolioStore.projecten.map(project => (
           console.log(project),
-          < Link to={ROUTES.projectDetail.to + project.id} >
-            <li className={styles.portfolioItem} key={project.id}>
-              <div className={styles.overlay}>
-                <p className={styles.hoveritem} >{project.name}</p>
-              </div>
+          <LazyLoad height={200}>
+            < Link to={ROUTES.projectDetail.to + project.id} >
+              <li className={styles.portfolioItem} key={project.id}>
+                <div className={styles.overlay}>
+                  <p className={styles.hoveritem} >{project.name}</p>
+                </div>
 
-              <img src={project.images[0]} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
+                <img src={project.images[0]} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
 
-            </li>
+              </li>
 
 
-          </Link>
+            </Link>
+          </LazyLoad>
         ))}
       </ul>
     </section >
