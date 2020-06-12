@@ -30,17 +30,26 @@ class Project {
   //   }
   // }
 
-  updateFromJson = ({ name, text, image }) => {
+  updateFromJson = ({ name, text, images, thumb, links, behance }) => {
     this.name = name;
     this.text = text;
-    this.image = image;
+    this.images = images;
+    this.thumb = thumb;
+    this.links = links;
+    this.behance = behance;
+
+
   };
 
   get asJson() {
     return {
       id: this.id,
       name: this.name,
-      text: this.text
+      text: this.text,
+      thumb: this.thumb,
+      images: this.images,
+      links: this.links,
+      behance: this.behance
     };
   }
 }

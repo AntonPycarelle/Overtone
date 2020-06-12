@@ -18,7 +18,7 @@ const Home = () => {
           < Link to={ROUTES.projectDetail.to + project.id} >
             <li className={styles.portfolioItem} key={project.id}>
               {/* <Link to={ROUTES.projectDetail.to + project.id}>{project.name}</Link> */}
-              <img src={project.image} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
+              <img src={project.images[0]} alt="Overtone Logo" className={styles.portfolioGridPics}></img>
             </li>
 
 

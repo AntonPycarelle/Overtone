@@ -8,7 +8,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 
 const Contact = () => {
     return (
-        <main >
+        <main className={styles.contactWrapper}>
             <h2 className={styles.formTitle}>Contacteer Ons</h2>
             <form className={styles.form} action="https://formspree.io/punbeatz@outlook.com"
                 method="POST">

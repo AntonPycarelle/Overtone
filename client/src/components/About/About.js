@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pica from '../../assets/overtone.jpg';
 import styles from '../../styles/pageheader.module.css'
 import { ROUTES } from "../../consts";
 

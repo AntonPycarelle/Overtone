@@ -3,6 +3,10 @@ import { useStore } from "../../hooks";
 import { useParams, Link, useHistory } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import { ROUTES } from "../../consts";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import styles from '../../styles/pageheader.module.css';
+
 
 // import style from "../../style/pageheader.module.css";
 
@@ -14,9 +18,9 @@ const ProjectDetail = () => {
 
 
   return useObserver(() => {
-    const book = portfolioStore.resolveBook(id);
-    console.log(book);
-    if (!book) return <p>Loading...</p>;
+    const project = portfolioStore.resolveBook(id);
+    console.log(project);
+    if (!project) return <p>Loading...</p>;
 
 
 
@@ -40,10 +44,21 @@ const ProjectDetail = () => {
     // };
 
     return (
-      <article>
-        <img src={book.image} alt="Overtone Logo" ></img>
+      <main>
+        <p className={styles.detailtitle}>Project</p>
+        <h2 className={styles.title}>{project.name}</h2>
 
-      </article>
+        <div className={styles.wrappercarousel}>
+          <Carousel stopOnHover swipeable infiniteLoop useKeyboardArrows showArrows={false} className={styles.carousel}>
+            {project.images.map(image => (
+              <div>
+                <img src={image} alt={project.id} className={styles.objectFit} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+        <p>{project.text}</p>
+      </main >
     );
   });
 };
