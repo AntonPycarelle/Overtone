@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import { useStore } from "../../hooks";
 import { useParams, Link, useHistory } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
-import { ROUTES } from "../../consts";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import styles from './projectdetail.module.css';
-import Sharebtn from "../sharebtn/sharebtn";
-import { FacebookButton } from "react-social-sharebuttons";
 
 // import style from "../../style/pageheader.module.css";
 
