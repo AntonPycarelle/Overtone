@@ -72,3 +72,13 @@
     position: relative;
     text-align: center;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    .portfolioGrid{
+      grid-gap: .3rem;
+      width: 95%;
+      margin: 3rem auto 5rem auto;
+      padding: 0;
+    }
+  }
