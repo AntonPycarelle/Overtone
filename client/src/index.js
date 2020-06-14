@@ -6,9 +6,13 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { Ripple } from 'react-preloaders';
 import GoogleFontLoader from 'react-google-font-loader';
+import Meta from './components/meta/meta'
 
 ReactDOM.render(
+
   <BrowserRouter>
+    <Meta />
+
     <App />
     <Ripple />
   </BrowserRouter>,

@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import styles from './styles/pageheader.module.css';
 import GoogleFontLoader from 'react-google-font-loader';
+import MetaTags from 'react-meta-tags';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             },
           ]}
         />
+
         <PageHeader />
         <Switch>
           <Route path={ROUTES.addAuthor}>

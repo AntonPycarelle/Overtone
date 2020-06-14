@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pica from '../../assets/overtone.jpg';
-import styles from '../../styles/pageheader.module.css'
+import styles from './contact.module.css'
 import { ROUTES } from "../../consts";
 import TextareaAutosize from 'react-textarea-autosize';
 
@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <main className={styles.contactWrapper}>
             <h2 className={styles.formTitle}>Contacteer Ons</h2>
-            <form className={styles.form} action="https://formspree.io/punbeatz@outlook.com"
+            <form className={styles.form} action="https://formspree.io/info@overtone.be"
                 method="POST">
 
                 <label>
@@ -25,8 +25,8 @@ const Contact = () => {
                     <p>Bericht</p>
                     <TextareaAutosize placeholder="Bericht" className={styles.input} />
                 </label>
+
                 <button className={styles.formbtn} type="submit" value="Send">Versturen</button>
-                {/* <AwesomeButton type="submit" value="Send">Primary</AwesomeButton> */}
 
 
 

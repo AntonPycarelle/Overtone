@@ -14,10 +14,9 @@ const Home = () => {
     <section >
       <ul className={styles.portfolioGrid}>
         {portfolioStore.projecten.map(project => (
-          console.log(project),
-          <LazyLoad height={200}>
+          <LazyLoad key={project.id} height={200}>
             < Link to={ROUTES.projectDetail.to + project.id} >
-              <li className={styles.portfolioItem} key={project.id}>
+              <li className={styles.portfolioItem} >
                 <div className={styles.overlay}>
                   <p className={styles.hoveritem} >{project.name}</p>
                 </div>

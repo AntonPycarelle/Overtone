@@ -76,9 +76,11 @@
 
   @media only screen and (max-width: 600px) {
     .portfolioGrid{
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+
       grid-gap: .3rem;
       width: 95%;
-      margin: 3rem auto 5rem auto;
+      /* margin: 3rem auto 5rem auto; */
       padding: 0;
     }
   }

@@ -11,7 +11,6 @@ class PortfolioStore {
 
   loadAllItems = async () => {
     const jsonAuthors = await this.authorsService.getAll();
-    console.log(jsonAuthors);
     jsonAuthors.forEach(json => this.updateAuthorFromServer(json));
   };
 
