@@ -10,6 +10,42 @@
 }
 
 
+.team{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 30%;
+}
+
+
+
+.asideGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "asideGridcontent asideGridmap";
+  width: 100%;
+  height: 30rem;
+  margin: auto;
+}
+
+
+.asideGridcontent{
+  grid-area: asideGridcontent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 0 3rem 3rem;
+}
+
+.asideGridmap{
+  grid-area: asideGridmap;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 
 .aboutpica{
@@ -17,10 +53,18 @@
   margin: 4rem auto 2.3rem auto;
 }
 
+.tel{
+  padding: .3rem 0;
+  margin: 0;
+}
+
+
+
 .abouttext{
   width: 40%;
   font-weight: 100;
   letter-spacing: .08rem;
+  padding-bottom: 3rem;
 }
 
 
@@ -107,4 +151,11 @@
 
 @media only screen and (max-width: 600px) {
 
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footerLeft footerCenter footerRight";
 }

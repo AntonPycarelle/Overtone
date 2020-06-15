@@ -6,13 +6,16 @@ import { useObserver } from "mobx-react-lite";
 import styles from './home.module.css';
 import LazyLoad from 'react-lazyload';
 
-
 const Home = () => {
   const { portfolioStore } = useStore();
+
+
+  
 
   return useObserver(() => (
     <section >
       <ul className={styles.portfolioGrid}>
+
         {portfolioStore.projecten.map(project => (
           <LazyLoad key={project.id} height={200}>
             < Link to={ROUTES.projectDetail.to + project.id} >
@@ -28,7 +31,9 @@ const Home = () => {
 
             </Link>
           </LazyLoad>
+
         ))}
+
       </ul>
     </section >
   ));

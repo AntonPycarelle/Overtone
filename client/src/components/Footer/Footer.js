@@ -21,6 +21,12 @@ const Footer = ({ items }) => {
                         <Link className={styles.normalFooterItemtext} to={ROUTES.contact}>Contact</Link>
                     </li>
                 </ul>
+                {/* <div className={styles.asideGridcontent}>
+                    <h3 className={styles.title2}>Contact Info</h3>
+                    <p className={styles.tel}>Driekerkenstraat 52</p>
+                    <p className={styles.tel}>8501 Kortrijk</p>
+                    <a className={styles.tel} href="tel:+32470602277">+32470602277</a>
+                </div> */}
             </div>
         </footer>
 

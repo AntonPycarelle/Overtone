@@ -1,0 +1,51 @@
+.profileWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    padding-top: 1rem;
+    /* background-color: #F7F7F7; */
+}
+
+.foto{
+    border-radius: 1000rem;
+}
+
+.name{
+    padding: .8rem 0 0 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.role{
+    margin: 0 0 .9rem 0;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    padding-bottom: .3rem;
+    font-size: .8rem;
+}
+
+.link:hover{
+    text-decoration: underline;
+}   
+
+.portfolio{
+    width: 70%;
+    background-color: #1DE9B6;
+    padding: .6rem .1rem;
+    margin-top: .5rem;
+    text-decoration: none;
+    border-radius: 20rem;
+    font-size: .8rem;
+    color: black;
+}
+
+.portfolio:hover{
+    background-color: #8a8a8a;
+    color: white;
+    transition: all .3s;
+}
