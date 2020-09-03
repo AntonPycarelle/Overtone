@@ -14,8 +14,7 @@ const PageHeader = ({ items }) => {
 
 
       <nav className={styles.nav}>
-        <Link to={ROUTES.home} className={[hover.hvrShrink, styles.navitem
-        ]}>Home</Link>
+        <Link to={ROUTES.home} className={hover.hvrShrink, styles.navitem}>Home</Link>
         {/* <Link to={ROUTES.portfolio} className={styles.navitem}>Portfolio</Link> */}
         <Link to={ROUTES.about} className={styles.navitem}>Over ons</Link>
         <Link to={ROUTES.contact} className={styles.navitem}>Contact</Link>

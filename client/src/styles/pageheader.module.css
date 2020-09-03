@@ -150,6 +150,14 @@
 
 
 @media only screen and (max-width: 600px) {
+  .team{
+
+    width: 80%;
+  }
+  .aboutpica{
+    width: 90%;
+    margin: 4rem auto 2.3rem auto;
+  }
 
 }
 

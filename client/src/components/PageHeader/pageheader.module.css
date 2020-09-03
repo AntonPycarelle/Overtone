@@ -13,11 +13,14 @@
   }
 
 
+
+
   @media only screen and (max-width: 600px) {
     .logo {
         max-width: 100%;
         min-width: 60%;
         margin: 4rem auto 2.3rem auto;
       }
+
   }
   
