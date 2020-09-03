@@ -5,14 +5,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { Ripple } from 'react-preloaders';
-import GoogleFontLoader from 'react-google-font-loader';
-import Meta from './components/meta/meta'
+import { Helmet } from 'react-helmet'
 
 ReactDOM.render(
 
   <BrowserRouter>
-    <Meta />
-
+    <Helmet>
+      <title>{"Overtone"}</title>
+    </Helmet>
     <App />
     <Ripple />
   </BrowserRouter>,

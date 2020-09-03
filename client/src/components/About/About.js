@@ -1,7 +1,6 @@
 import React from "react";
 import styles from '../../styles/pageheader.module.css'
 import ProfileCard from "../ProfileCard/ProfileCard";
-import Iframe from 'react-iframe'
 
 const About = ({ items }) => {
     return (
