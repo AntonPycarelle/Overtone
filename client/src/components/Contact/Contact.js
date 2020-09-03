@@ -1,8 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import pica from '../../assets/overtone.jpg';
 import styles from './contact.module.css'
-import { ROUTES } from "../../consts";
 import TextareaAutosize from 'react-textarea-autosize';
 
 
