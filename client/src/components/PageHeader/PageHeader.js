@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../assets/logonaam.svg';
 import styles from './pageheader.module.css'
-import hover from '../../styles/hover.module.css'
 
 import { ROUTES } from "../../consts";
 
