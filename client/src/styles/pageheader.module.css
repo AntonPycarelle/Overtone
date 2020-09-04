@@ -18,6 +18,15 @@
   width: 30%;
 }
 
+.grayTxt{
+  color: gray;
+  font-size: .8rem;
+}
+
+.logoKrew{
+  padding-bottom: 2rem;
+}
+
 
 
 .asideGrid{
@@ -66,6 +75,8 @@
   letter-spacing: .08rem;
   padding-bottom: 3rem;
 }
+
+
 
 
 .contactWrapper{

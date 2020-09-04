@@ -15,13 +15,18 @@ Een digitale of visuele oplossing nodig voor uw idee? Denk aan een <strong> webs
 
                 <h2>Ons Team</h2>
                 <div className={styles.team}>
-                    <ProfileCard name="anton" role="Co-owner" telNumber="+32476289078" portfolioLink="https://www.behance.net/antonpycarelle" handle="antonpycarelle" />
-                    <ProfileCard name="vic" role="Co-owner" telNumber="+32470602277" portfolioLink="https://www.behance.net/vicdebonne" handle="vicdebonne" />
+                    <ProfileCard name="anton" role="CEO / Designer" telNumber="+32476289078" portfolioLink="https://www.behance.net/antonpycarelle" handle="antonpycarelle" />
+                    <ProfileCard name="vic" role="COO / Graphic designer" telNumber="+32470602277" portfolioLink="https://vicdebonne.myportfolio.com/ " handle="vicdebonne" />
                 </div>
 
 
 
             </main>
+
+            <aside>
+                <h2 className={styles.grayTxt}>In Samenwerking met</h2>
+                <img className={styles.logoKrew} width="10%" src="images/krewcollective_logo_grey.png" alt="Kerwcollective" />
+            </aside>
             {/* <aside className={styles.asideGrid}>
                 <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260.2779466519287!2d3.2280300396873676!3d50.82086646968845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33b42a60ea63b%3A0x824eb7ae4eb81a88!2sovertone.!5e0!3m2!1sen!2sbe!4v1592215090213!5m2!1sen!2sbe"
                     id="myId"
